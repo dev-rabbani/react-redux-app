@@ -9,7 +9,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import app scss
 import "./assets/scss/app.scss";
 import { Provider } from "react-redux";
-import store from "./redux/counter";
+import store from "./redux/store";
+
+import CounterProvider from "./context-api/counter-context";
+
+const counterVal = 20;
 
 ReactDOM.render(
   <React.StrictMode>
